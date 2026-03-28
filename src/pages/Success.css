@@ -1,0 +1,112 @@
+.success-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.success-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.success-icon {
+  margin-bottom: 25px;
+}
+
+.success-icon svg {
+  color: #22c55e;
+  animation: slideInScale 0.5s ease-out;
+}
+
+@keyframes slideInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.success-card h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.success-card p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.info-text {
+  font-size: 14px;
+  color: #888;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .success-card {
+    padding: 25px 20px;
+  }
+
+  .success-icon svg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .success-card h1 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .success-card p {
+    font-size: 14px;
+  }
+
+  .info-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .success-container {
+    padding: 10px;
+  }
+
+  .success-card {
+    padding: 20px 15px;
+  }
+
+  .success-icon svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .success-card h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .success-card p {
+    font-size: 12px;
+  }
+
+  .info-text {
+    font-size: 11px;
+  }
+}
